@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <header >
+    <header>
       <div class="navbar bg-base-100 shadow-sm px-5 bg-[#EDF6FF]">
         <div class="navbar-start">
           <div class="dropdown">
@@ -87,7 +87,8 @@
             </li>
             <li>
               <a href="" class="btn btn-outline btn-primary"
-                ><i class="fa-solid fa-book-open"></i>Learn</a>
+                ><i class="fa-solid fa-book-open"></i>Learn</a
+              >
             </li>
             <li>
               <a href="" class="btn btn-outline btn-primary"
@@ -107,18 +108,30 @@
           <span class="text-blue-400">English</span> is Easy!!
         </h2>
         <p class="font-bangla">
-          আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা <br>
-          আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে <br> যাবে
+          আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+          আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
           অন্য একটি Level এ
         </p>
         <div class="join mt-4">
-          <form >
-            <input type="text" name="username" placeholder="Enter Your Name" required/> <br/> <br>
+          <form>
+            <input
+              type="text"
+              name="username"
+              placeholder="Enter Your Name"
+              required
+            />
+            <br />
+            <br />
 
-            <input type="password" name="password" placeholder="Password" required/> <br/> <br>
-            <button type="submit" class="btn btn-primary">
-              Get Started
-            </button>
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <br />
+            <br />
+            <button type="submit" class="btn btn-primary">Get Started</button>
           </form>
         </div>
       </div>
@@ -128,17 +141,45 @@
     </section>
 
     <!-- let's learn start here -->
-     <section>
-         <h2 class="text-4xl font-bold mb-6 text-center">
-          <span class="text-blue-400">Let's</span> Learn Vocabularies
+    <section>
+      <h2 class="text-4xl font-bold mb-6 text-center">
+        <span class="text-blue-400">Let's</span> Learn Vocabularies
+      </h2>
+      <div
+        id="level-container"
+        class="flex gap-5 flex-wrap justify-center"
+      ></div>
+    </section>
+    <!-- lesson select section start -->
+    <section
+      id="word-container"
+      class="bg-gray-100 p-10 w-11/12 mx-auto my-10 grid grid-cols-3 gap-5"
+    >
+      <div class="text-center col-span-full py-10 font-bangla">
+        <p class="text-[#79716B] text-sm mb-2">
+          আপনি এখনো কোন Lesson Select করেন নি
+        </p>
+        <h2 class="text-black font-semibold text-4xl">
+          একটি Lesson Select করুন।
         </h2>
-        <div id="level-container" class="flex gap-5 flex-wrap justify-center"></div>
-     </section>
-     <!-- lesson select section start -->
-      <section id="word-container" class="bg-gray-100 p-10 w-11/12 mx-auto my-10 grid grid-cols-3 gap-5">
-        
-      </section>
+      </div>
+    </section>
 
-     <script src="script/index.js"></script>
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <h3 class="text-lg font-bold">Hello!</h3>
+        <p class="py-4">Press ESC key or click the button below to close</p>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="script/index.js"></script>
   </body>
 </html>
